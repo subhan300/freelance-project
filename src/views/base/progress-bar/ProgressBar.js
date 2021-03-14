@@ -5,13 +5,13 @@ import {
   CCardHeader,
   CProgress,
   CProgressBar
-} from '@coreui/react'
+} from '@coreui/react-ts'
 import { DocsLink } from 'src/reusable'
 
 const ProgressBar = () => {
   return (
     <>
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           Progress
           <DocsLink name="CProgressBar"/>
@@ -24,28 +24,28 @@ const ProgressBar = () => {
           <CProgress value={100} className="mb-3" />
         </CCardBody>
       </CCard>
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           Progress
           <small> labels</small>
         </CCardHeader>
         <CCardBody>
-          <CProgress value={25.3746472} showPercentage precision={2} className="mb-3"/>
-          <CProgress value={50.45} showValue className="mb-3"/>
-          <CProgress value={15} max={20} showPercentage className="mb-3"/>
+          <CProgress value={25.3746472} className="mb-3"/>
+          <CProgress value={50.45} className="mb-3"/>
+          <CProgress value={15} max={20} className="mb-3"/>
         </CCardBody>
       </CCard>
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           Progress
           <small> heights</small>
         </CCardHeader>
         <CCardBody>
-          <CProgress value={25} className="mb-3" style={{height: "3px"}}/>
-          <CProgress value={25} className="mb-3" style={{height: "30px"}}/>
+          <CProgress value={25} className="mb-3" height="3"/>
+          <CProgress value={25} className="mb-3" height="30"/>
         </CCardBody>
       </CCard>
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           Progress
           <small> backgrounds</small>
@@ -57,7 +57,7 @@ const ProgressBar = () => {
           <CProgress color="danger" value="100" className="mb-3" />
         </CCardBody>
       </CCard>
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           Progress
           <small> multiple bar</small>
@@ -70,7 +70,7 @@ const ProgressBar = () => {
           </CProgress>
         </CCardBody>
       </CCard>
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           Progress
           <small> striped</small>
@@ -83,7 +83,7 @@ const ProgressBar = () => {
           <CProgress striped color="danger" value={100} className="mb-3" />
         </CCardBody>
       </CCard>
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           Progress
           <small> animated</small>

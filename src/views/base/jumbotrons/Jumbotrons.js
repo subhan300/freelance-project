@@ -18,8 +18,8 @@ const Jumbotrons = () => {
   return (
     <>
       <CRow>
-        <CCol>
-          <CCard>
+        <CCol xs>
+          <CCard className="mb-4">
             <CCardHeader>
               Jumbotron
               <DocsLink name="CJumbotron"/>
@@ -38,8 +38,8 @@ const Jumbotrons = () => {
             </CCardBody>
           </CCard>
         </CCol>
-        <CCol>
-          <CCard>
+        <CCol xs>
+          <CCard className="mb-4">
             <CCardHeader>
               Jumbotron
               <small> fluid</small>
@@ -56,8 +56,8 @@ const Jumbotrons = () => {
         </CCol>
       </CRow>
       <CRow>
-        <CCol>
-          <CCard>
+        <CCol xs>
+          <CCard className="mb-4">
             <CCardHeader>
               Embed
             </CCardHeader>

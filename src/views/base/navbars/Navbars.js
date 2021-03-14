@@ -1,5 +1,11 @@
 import React, { useState } from 'react'
 import {
+  CToggler,
+  CForm,
+  CInput,
+  CImg
+} from '@coreui/react'
+import {
   CCard,
   CCardBody,
   CCardHeader,
@@ -11,14 +17,10 @@ import {
   CNavbarNav,
   CNavbarBrand,
   CNavbarText,
-  CToggler,
   CNavLink,
   CDropdown,
-  CForm,
-  CInput,
   CButton,
-  CImg
-} from '@coreui/react'
+} from '@coreui/react-ts'
 import { DocsLink } from 'src/reusable'
 
 const CNavbars = () => {
@@ -29,7 +31,7 @@ const CNavbars = () => {
   return (
     <>
 
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           CNavbar
           <DocsLink name="CNavbar"/>
@@ -45,10 +47,10 @@ const CNavbars = () => {
                 <CNavLink>Home</CNavLink>
                 <CNavLink>Link</CNavLink>
               </CNavbarNav>
-              <CNavbarNav className="ml-auto">
+              <CNavbarNav className="ms-auto">
                 <CForm inline>
                   <CInput
-                    className="mr-sm-2"
+                    className="me-sm-2"
                     placeholder="Search"
                     size="sm"
                   />
@@ -84,7 +86,7 @@ const CNavbars = () => {
         </CCardBody>
       </CCard>
 
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           CNavbar brand
         </CCardHeader>
@@ -102,7 +104,7 @@ const CNavbars = () => {
         </CCardBody>
       </CCard>
 
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           CNavbar text
         </CCardHeader>
@@ -122,7 +124,7 @@ const CNavbars = () => {
         </CCardBody>
       </CCard>
 
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           CNavbar dropdown
         </CCardHeader>
@@ -163,7 +165,7 @@ const CNavbars = () => {
         </CCardBody>
       </CCard>
 
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           CNavbar form
         </CCardHeader>
@@ -171,7 +173,7 @@ const CNavbars = () => {
           <CNavbar light color="light">
             <CForm inline>
               <CInput
-                className="mr-sm-2"
+                className="me-sm-2"
                 placeholder="Search"
                 size="sm"
               />
@@ -181,7 +183,7 @@ const CNavbars = () => {
         </CCardBody>
       </CCard>
 
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           CNavbar input group
         </CCardHeader>
@@ -189,7 +191,7 @@ const CNavbars = () => {
           <CNavbar light color="light">
             <CForm inline>
               <CInput
-                className="mr-sm-2"
+                className="me-sm-2"
                 placeholder="Username"
               />
             </CForm>

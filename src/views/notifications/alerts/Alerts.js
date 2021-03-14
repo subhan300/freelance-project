@@ -1,15 +1,18 @@
 import React from 'react'
 import {
+  CLink,
+} from '@coreui/react'
+import {
   CAlert,
+  CAlertHeading,
   CButton,
   CCard,
   CCardBody,
   CCardHeader,
   CCol,
-  CLink,
   CProgress,
-  CRow
-} from '@coreui/react'
+  CRow,
+} from '@coreui/react-ts'
 import { DocsLink } from 'src/reusable'
 
 const Alerts = () => {
@@ -19,7 +22,7 @@ const Alerts = () => {
     <>
       <CRow>
         <CCol xs="12" md="6">
-          <CCard>
+          <CCard className="mb-4">
             <CCardHeader>
               Alerts
               <DocsLink name="CAlert"/>
@@ -53,7 +56,7 @@ const Alerts = () => {
           </CCard>
         </CCol>
         <CCol xs="12" md="6">
-          <CCard>
+          <CCard className="mb-4">
             <CCardHeader>
               Alerts
               <small> use <code>.alert-link</code> to provide links</small>
@@ -113,14 +116,14 @@ const Alerts = () => {
       </CRow>
       <CRow>
         <CCol xs="12" md="6">
-          <CCard>
+          <CCard className="mb-4">
             <CCardHeader>
               Alerts
               <small> additional content</small>
             </CCardHeader>
             <CCardBody>
               <CAlert color="success">
-                <h4 className="alert-heading">Well done!</h4>
+                <CAlertHeading>Well done!</CAlertHeading>
                 <p>
                   Aww yeah, you successfully read this important alert message. This example text is going
                   to run a bit longer so that you can see how spacing within an alert works with this kind
@@ -135,7 +138,7 @@ const Alerts = () => {
           </CCard>
         </CCol>
         <CCol xs="12" md="6">
-          <CCard>
+          <CCard className="mb-4">
             <CCardHeader>
               Alerts
               <small> dismissing</small>
@@ -143,7 +146,7 @@ const Alerts = () => {
             <CCardBody>
               <CAlert
                 color="info"
-                closeButton
+                dismissible
               >
                 I am an dismissible alert!
               </CAlert>
@@ -151,7 +154,7 @@ const Alerts = () => {
                 color="warning"
                 show={visible}
                 closeButton
-                onShowChange={setVisible}
+                visible={setVisible}
               >
                 I will be closed in {visible} seconds!
                 <CProgress

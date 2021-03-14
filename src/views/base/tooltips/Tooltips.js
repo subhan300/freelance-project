@@ -7,6 +7,8 @@ import {
   CTooltip,
   CRow,
   CCol,
+} from '@coreui/react-ts'
+import {
   CLink
 } from '@coreui/react'
 import { DocsLink } from 'src/reusable'
@@ -21,7 +23,7 @@ const Tooltips = () => {
 
   return (
     <>
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           Tooltips
           <DocsLink name="CTooltip"/>
@@ -64,7 +66,7 @@ const Tooltips = () => {
 
       <hr/>
 
-      <CCard>
+      <CCard className="mb-4">
         <CCardHeader>
           Tooltips
           <small> placement</small>

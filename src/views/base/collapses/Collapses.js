@@ -8,7 +8,7 @@ import {
   CCol,
   CCollapse,
   CFade,
-  CRow 
+  CRow
 } from '@coreui/react';
 import { DocsLink } from 'src/reusable'
 
@@ -49,7 +49,7 @@ const Collapses = () => {
   return (
     <CRow>
       <CCol xl="6">
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Collapse
             <DocsLink name="CCollapse"/>
@@ -84,7 +84,7 @@ const Collapses = () => {
           </CCardFooter>
         </CCard>
 
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Collapse
             <small> multi target</small>
@@ -99,9 +99,9 @@ const Collapses = () => {
                   Both</CButton>{' '}
               </p>
               <CRow>
-                <CCol>
+                <CCol xs>
                   <CCollapse show={collapseMulti[0]}>
-                    <CCard>
+                    <CCard className="mb-4">
                       <CCardBody>
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                       </CCardBody>
@@ -110,7 +110,7 @@ const Collapses = () => {
                 </CCol>
                 <CCol className="col-sm-12 col-md-6">
                   <CCollapse show={collapseMulti[1]}>
-                    <CCard>
+                    <CCard className="mb-4">
                       <CCardBody>
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                       </CCardBody>
@@ -123,7 +123,7 @@ const Collapses = () => {
 
         <hr/>
 
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Fade
             <DocsLink name="CFade"/>
@@ -139,7 +139,7 @@ const Collapses = () => {
         </CCard>
       </CCol>
       <CCol xl="6">
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Collapse
             <small> accordion</small>
@@ -148,10 +148,10 @@ const Collapses = () => {
             <div id="accordion">
               <CCard className="mb-0">
                 <CCardHeader id="headingOne">
-                  <CButton 
-                    block 
-                    color="link" 
-                    className="text-left m-0 p-0" 
+                  <CButton
+                    block
+                    color="link"
+                    className="text-left m-0 p-0"
                     onClick={() => setAccordion(accordion === 0 ? null : 0)}
                   >
                     <h5 className="m-0 p-0">Collapsible Group Item #1</h5>
@@ -169,10 +169,10 @@ const Collapses = () => {
               </CCard>
               <CCard className="mb-0">
                 <CCardHeader id="headingTwo">
-                  <CButton 
-                    block 
-                    color="link" 
-                    className="text-left m-0 p-0" 
+                  <CButton
+                    block
+                    color="link"
+                    className="text-left m-0 p-0"
                     onClick={() => setAccordion(accordion === 1 ? null : 1)}
                   >
                     <h5 className="m-0 p-0">Collapsible Group Item #2</h5>
@@ -190,10 +190,10 @@ const Collapses = () => {
               </CCard>
               <CCard className="mb-0">
                 <CCardHeader id="headingThree">
-                  <CButton 
-                    block 
-                    color="link" 
-                    className="text-left m-0 p-0" 
+                  <CButton
+                    block
+                    color="link"
+                    className="text-left m-0 p-0"
                     onClick={() => setAccordion(accordion === 2 ? null : 2)}
                   >
                     <h5 className="m-0 p-0">Collapsible Group Item #3</h5>

@@ -3,7 +3,6 @@ import {
   CButton,
   CDropdown,
   CButtonGroup,
-  CButtonToolbar,
   CCard,
   CCardBody,
   CCardHeader,
@@ -11,11 +10,14 @@ import {
   CDropdownItem,
   CDropdownMenu,
   CDropdownToggle,
+  CRow,
+} from '@coreui/react-ts'
+import {
+  CButtonToolbar,
   CInput,
   CInputGroup,
   CInputGroupPrepend,
   CInputGroupText,
-  CRow,
   CCallout
 } from '@coreui/react'
 import { DocsLink } from 'src/reusable'
@@ -24,7 +26,7 @@ const ButtonGroups = () => {
   return (
     <CRow>
       <CCol md="6">
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Callout
             <DocsLink name="CCallout"/>
@@ -36,7 +38,7 @@ const ButtonGroups = () => {
           </CCardBody>
         </CCard>
 
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Button Group
             <DocsLink name="-Button/#CButtonGroup"/>
@@ -50,20 +52,20 @@ const ButtonGroups = () => {
           </CCardBody>
         </CCard>
 
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Button Group
             <small> toolbar</small>
           </CCardHeader>
           <CCardBody>
             <CButtonToolbar className="mb-3">
-              <CButtonGroup className="mr-2">
+              <CButtonGroup className="me-2">
                 <CButton color="secondary">1</CButton>
                 <CButton color="secondary">2</CButton>
                 <CButton color="secondary">3</CButton>
                 <CButton color="secondary">4</CButton>
               </CButtonGroup>
-              <CButtonGroup className="mr-2">
+              <CButtonGroup className="me-2">
                 <CButton color="secondary">5</CButton>
                 <CButton color="secondary">6</CButton>
                 <CButton color="secondary">7</CButton>
@@ -73,7 +75,7 @@ const ButtonGroups = () => {
               </CButtonGroup>
             </CButtonToolbar>
             <CButtonToolbar className="mb-3">
-              <CButtonGroup className="mr-2">
+              <CButtonGroup className="me-2">
                 <CButton color="secondary">1</CButton>
                 <CButton color="secondary">2</CButton>
                 <CButton color="secondary">3</CButton>
@@ -103,7 +105,7 @@ const ButtonGroups = () => {
           </CCardBody>
         </CCard>
 
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Button Group
             <small> vertical variation</small>
@@ -120,7 +122,7 @@ const ButtonGroups = () => {
       </CCol>
       <CCol md={6}>
 
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Button Group
             <small> sizing</small>
@@ -146,7 +148,7 @@ const ButtonGroups = () => {
           </CCardBody>
         </CCard>
 
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Button Group
             <small> nestingccc</small>
@@ -168,7 +170,7 @@ const ButtonGroups = () => {
           </CCardBody>
         </CCard>
 
-        <CCard>
+        <CCard className="mb-4">
           <CCardHeader>
             Button Group
             <small> vertical</small>
